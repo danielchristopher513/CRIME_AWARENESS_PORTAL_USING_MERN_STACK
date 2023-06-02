@@ -1,0 +1,211 @@
+<html>
+    <head>
+        <title>Helpfull videos</title>
+        <style>
+
+            td{
+                padding: 50px;
+            }
+            footer {
+                position: relative;
+                bottom: 0px;
+                padding: 3px;
+                background-color: rgb(24, 166, 223);
+                color: white;
+            }
+        </style>
+         <link rel="stylesheet" href="nav_css.css">
+         <link rel="icon" href="icon.jpg" type="image/x-icon">
+    </head>
+    <body>
+
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="/viewIssue">View Issues</a></li>
+            <li><a href="acknowledment.html">Report complaint</a></li>
+            <li><a href="Contact_us.html">Contact us</a></li>
+            
+        </ul>
+
+        <div id="main">
+        <h1><u>HELPFULL RESOURCES</u></h1>
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <div id="container"></div>
+    <script type="text/babel">
+
+        class ResultImage extends React.Component {
+            render() {
+                return (
+                    <img src={this.props.src} width={this.props.width}></img>
+                );
+            }
+        }
+
+        class ResultCaption extends React.Component {
+            render() {
+                return (
+                    <p>{this.props.caption}</p>
+                );
+            }
+        }
+
+        class ResultLink extends React.Component {
+            render() {
+                return (
+                    <a href={this.props.href}>{this.props.children}</a>
+                );
+            }
+        }
+
+        class SearchResult extends React.Component {
+            render() {
+                const vStyle={
+                    height:"300px",
+                width:"300px",
+                    
+                };
+                return (
+                    <div style={vStyle}>
+                    <ResultImage {...this.props}/>
+                    <ResultCaption {...this.props}/>
+                    <ResultLink {...this.props}/>
+                    </div>
+                );
+            }
+        }
+        class ResultVideo extends React.Component {
+            render() {
+                return (
+                    <video controls src={this.props.src} width={this.props.width}></video>
+                );
+            }
+        }
+        class SearchResultV extends React.Component {
+            render() {
+                const lStyle={
+                height:"300px",
+                width:"300px",
+                    
+                };
+                return (
+                    <div style={lStyle}>
+                    <ResultVideo {...this.props}/>
+                    <ResultCaption {...this.props}/>
+                    <ResultLink {...this.props}/>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(
+            <SearchResult src="PROPERTY CRIME MPD(1).jpg" 
+            width="200px" caption="PROPERTY CRIME MPD(1).jpg"
+            href="https://www.youtube.com/watch?v=E07s5ZYygMg">
+            safety videos
+            </SearchResult>,
+
+            document.querySelector("#a")
+        );
+        ReactDOM.render(
+            <SearchResult src="crime_awar.jpeg" 
+            width="200px" caption=" Self defence videos for women"
+            href="https://www.youtube.com/watch?v=E07s5ZYygMg">
+           Crime awareness
+            </SearchResult>,
+            document.querySelector("#c")
+        );
+        ReactDOM.render(
+            <SearchResult src="homesafety.png" 
+            width="200px" caption="  Self defence"
+            href="https://www.youtube.com/watch?v=E07s5ZYygMg">
+        Homesafety
+            </SearchResult>,
+
+            document.querySelector("#e")
+        );
+        ReactDOM.render(
+            <SearchResultV src="Free-Safety-Videos-Kitchen-Oil-Fire.mp4" 
+            width="200px" caption="  Fire safety"
+            href="https://www.youtube.com/watch?v=E07s5ZYygMg">
+            Fire Safety
+            </SearchResultV>,
+
+            document.querySelector("#b")
+        );
+        ReactDOM.render(
+            <SearchResultV src="self_defence-video-1.mp4" 
+            width="200px" caption="  Self defence"
+            href="https://www.youtube.com/watch?v=E07s5ZYygMg">
+            Self-defence
+            </SearchResultV>,
+
+            document.querySelector("#d")
+        );
+        ReactDOM.render(
+            <SearchResultV src="self_defence-video-2.mp4" 
+            width="200px" caption="  Self defence"
+            href="https://www.youtube.com/watch?v=E07s5ZYygMg">
+           Self-defence
+            </SearchResultV>,
+
+            document.querySelector("#f")
+        );
+        ReactDOM.render(
+            <SearchResultV src="self_defence-video-3.mp4" 
+            width="200px" caption="  Self defence"
+            href="https://www.youtube.com/watch?v=E07s5ZYygMg">
+           Self-defence
+            </SearchResultV>,
+
+            document.querySelector("#g")
+        );
+    </script>
+                <table>
+                    <tr>
+                        <td id="a">
+                            
+                        </td>
+                        
+                        <td id="b">
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="c">
+                            
+                        </td>
+                        
+                        <td id="d">
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="e">
+                            
+                        </td>
+                        <td>
+                           
+                        </td>
+                        <td id="f" style="padding-left: 100000px">
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="g">
+                            
+                        </td>
+                        
+                    </tr>
+                </table>
+              
+            </div>
+            <footer>
+                <p>This website is managed by team 5<br>
+                For any feedback : 
+                <a href="Feedback_form.html">feedback</a></p>
+            </footer>
+    </body>
+</html>
+

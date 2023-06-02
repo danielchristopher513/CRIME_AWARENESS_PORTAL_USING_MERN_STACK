@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Report Crime</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="nav_css.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+     html{
+         background: url(img.jpg) no-repeat center center fixed;
+         -webkit-background-size:cover;
+         -moz-background-size:cover;
+         -o-background-size:cover;
+          background-size:cover;
+     }  
+    </style>
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+  </head>
+  <body>
+    
+    <h1 style="color:rgb(127, 224, 16); font-family:verdana;"><u>REPORT CRIME</u></h1>
+    <div class="signup-box">
+    <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="/viewIssue">View Issues</a></li>
+        <li><a href="vedio_support.html">Helpfull Resources</a></li>
+        <li><a href="Contact_us.html">Contact us</a></li>
+    </ul>
+
+      <h1>Enter details</h1>
+
+      
+
+      <form action="/report_crime" method="POST">
+        <label>First Name</label>
+        <input type="text" id="firstname" name="firstname" placeholder="" /> <br>
+        <label>Last Name</label>
+        <input type="text" id="lastname" name="lastname" placeholder="" /> <br>
+        <label>Email</label>
+        <input type="email" id="email" name="email"placeholder="" /> <br>
+        <label>Date and Time</label>
+        <input type="datetime-local" id="date_time" name="date_time" placeholder="" /> <br>
+        <label>Nature of complaint </label>
+        <input type="text" id="complaint_type" name="complaint_type" placeholder="" /> <br>
+        <label>Location of crime</label>
+        <input type="text" id="location" name="location" placeholder="" /> <br>
+        <label>Description of events</label>
+        <input type="text" id="description" name="description" placeholder="" /> <br>
+        
+        
+        <br><br><br>
+        <button>Submit</button>
+      </form>
+      
+    </div>
+    
+  </body>
+</html>
+
+
+

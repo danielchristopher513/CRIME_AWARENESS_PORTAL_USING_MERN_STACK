@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Current issues</title>
+        <style>
+            td,th{
+                border: 1px solid black;
+                padding: 10px;
+                background-color: aqua;
+            }
+            #main{
+                padding-left: 150px;
+                padding-top: 50px;
+            }
+            footer {
+                position: relative;
+                bottom: 0px;
+                padding: 3px;
+                background-color: rgb(24, 166, 223);
+                color: white;
+            }
+        </style>
+        <link rel="stylesheet" href="nav_css.css">
+        <link rel="icon" href="icon.jpg" type="image/x-icon">
+    </head>
+    <body>
+
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="vedio_support.html">Helpfull Resources</a></li>
+            <li><a href="acknowledment.html">Report complaint</a></li>
+            <li><a href="Contact_us.html">Contact us</a></li>
+        
+        </ul>
+
+        <div id="main">
+        <h1><u>CURRENT ISSUES</u></h1>
+        <form>
+            <main>
+        <table style="border: 1px solid black;" >
+            <% Reporteddetails.forEach(function(complaint) { %>
+            <tr>
+                <th style="column-width: 100px;background-color:tomato;">Date</th>
+                <th style="column-width: 100px;background-color:tomato;">Complaint</th>
+                <th style="column-width: 300px;background-color:tomato;">Location</th>
+                <th style="column-width: 600px;background-color:tomato;">Desc</th>
+                
+            </tr>
+            <tbody>
+                <tr>
+                  <td>
+                    <p><%= complaint.date_time %></p>
+                  </td>
+                  <td>
+                    <p><%= complaint.complaint_type %></p>
+                  </td>
+                   <td>
+                <p><%= complaint.location %></p>
+                  </td>
+                  <td>
+                    <p><%= complaint.description %></p>
+                </td>
+                </tr>
+              </tbody>
+            <% }); %>
+        </table><br>
+    </main>
+        </form>
+    </div>
+    <br><br><br><br><br>
+    <footer>
+        <p>This website is managed by team 5<br>
+        For any feedback : 
+        <a href="Feedback_form.html">feedback</a></p>
+    </footer>
+    </body>
+</html>

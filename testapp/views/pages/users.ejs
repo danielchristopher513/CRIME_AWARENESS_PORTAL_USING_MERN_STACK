@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+</head>
+<body>
+    <header>
+        <%- include('../partials/header') %>
+    </header>
+    <main>
+        <<table>
+  <% userdetails.forEach(function(user) { %>
+    <th><h3>First Name </h3></th>
+    <th><h3>Last Name</h3></th>
+    <th><h3>Age</h3></th>
+    <tbody>
+      <tr>
+        <td>
+          <p><%= user.firstname %></p>
+        </td>
+        <td>
+          <p><%= user.lastname %></p>
+        </td>
+         <td>
+	  <p><%= user.age %></p>
+        </td>
+      </tr>
+    </tbody>
+  <% }); %>
+</table>
+    </main>
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+</body>
+</html>
